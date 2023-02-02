@@ -25,7 +25,7 @@ public struct StripeEvent: Codable {
     /// Number of webhooks that have yet to be successfully delivered (i.e., to return a 20x response) to the URLs you’ve specified.
     public var pendingWebhooks: Int?
     /// Information on the API request that instigated the event.
-    public var request: StripeEventRequest?
+    public var request: String?//StripeEventRequest?
     /// Description of the event (e.g., invoice.created or charge.refunded).
     public var type: StripeEventType?
 }
