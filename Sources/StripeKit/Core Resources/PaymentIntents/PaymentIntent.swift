@@ -229,6 +229,7 @@ public enum StripePaymentIntentStatus: String, Codable {
     case requiresPaymentMethod = "requires_payment_method"
     case requiresConfirmation = "requires_confirmation"
     case requiresAction = "requires_action"
+    case requiresSource = "requires_source"
     case processing
     case requiresCapture = "requires_capture"
     case canceled
